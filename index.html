@@ -3,37 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ucapan Ulang Tahun</title>
-   <link rel="stylesheet" href="hbd.css">
+    <link rel="stylesheet" href="hbd.css" />
   </head>
   <body>
+    <!-- === LAYAR INTRO === -->
+    <div class="intro" id="intro">
+      <h2>🎉 Siap-siap untuk kejutan 🎉</h2>
+    </div>
+
     <!-- === UCAPAN UTAMA === -->
-    <h1>🎉 Selamat Ulang Tahun! 🎉</h1>
+    <h1 id="title" class="hidden">🎉 Selamat Ulang Tahun! 🎉</h1>
 
     <!-- === TOMBOL AKSI === -->
-    <button onclick="showMessage()">Gamau Coba Teken ini?</button>
+    <button id="btn" class="hidden" onclick="showMessage()">Gamau Coba Teken ini?</button>
 
     <!-- === PESAN ULANG TAHUN === -->
-    <div class="message" id="birthdayMessage">
+    <div class="message hidden" id="birthdayMessage">
       Happy Level Up Day Nisa! 🥳
-      <br />
-      <br />
+      <br /><br />
       Hari ini hari ulang tahunmu😍
-      <br />
-      <br />
+      <br /><br />
       Selamat bertambah usia, makin sabar, kuat dan sehat selalu yaa🫰
-      <br />
-      <br />
+      <br /><br />
       Semoga terus buat ngejar apa yang kamu impikan, doa terbaik dari aku
       untukmu!🤲
-      <br />
-      <br />
+      <br /><br />
       Semoga dihari specialmu ini menjadi lebih baik dari yang lalu!💫
-      <br />
-      <br />
+      <br /><br />
       Wish You All The Best✨
     </div>
 
-    <!-- === SCRIPT === -->
+    <!-- === AUDIO MUSIC === -->
+    <audio id="bgMusic" src="music.mp3" loop></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="hbd.js"></script>
   </body>
 </html>
