@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ucapan Ulang Tahun</title>
+   <link rel="stylesheet" href="hbd.css">
+  </head>
+  <body>
+    <!-- === UCAPAN UTAMA === -->
+    <h1>🎉 Selamat Ulang Tahun! 🎉</h1>
+
+    <!-- === TOMBOL AKSI === -->
+    <button onclick="showMessage()">Gamau Coba Teken ini?</button>
+
+    <!-- === PESAN ULANG TAHUN === -->
+    <div class="message" id="birthdayMessage">
+      Happy Level Up Day Nisa! 🥳
+      <br />
+      <br />
+      Hari ini hari ulang tahunmu😍
+      <br />
+      <br />
+      Selamat bertambah usia, makin sabar, kuat dan sehat selalu yaa🫰
+      <br />
+      <br />
+      Semoga terus buat ngejar apa yang kamu impikan, doa terbaik dari aku
+      untukmu!🤲
+      <br />
+      <br />
+      Semoga dihari specialmu ini menjadi lebih baik dari yang lalu!💫
+      <br />
+      <br />
+      Wish You All The Best✨
+    </div>
+
+    <!-- === SCRIPT === -->
+    <script>
+      // Fungsi ketika tombol diklik
+      function showMessage() {
+        document.getElementById("birthdayMessage").style.display = "block";
+      }
+
+      // Membuat balon animasi muncul secara acak
+      for (let i = 0; i < 30; i++) {
+        let balloon = document.createElement("div");
+        balloon.className = "balloon";
+
+        // Posisi horizontal acak (0-100vw)
+        balloon.style.left = Math.random() * 100 + "vw";
+
+        // Warna balon acak dengan hsl
+        balloon.style.background = `hsl(${Math.random() * 360}, 70%, 70%)`;
+
+        // Durasi animasi acak
+        balloon.style.animationDuration = Math.random() * 3 + 3 + "s";
+
+        document.body.appendChild(balloon);
+      }
+    </script>
+  </body>
+</html>
