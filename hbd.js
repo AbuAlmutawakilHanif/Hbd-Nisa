@@ -19,7 +19,7 @@ function showMessage() {
 // Putar musik
 function playMusic() {
   const music = document.getElementById("bgMusic");
-  music.volume = 0.3; // volume kecil
+  music.volume = 0.4; // volume kecil
   music.play().catch(() => {
     console.log("Autoplay diblokir, pengguna harus klik tombol dulu.");
   });
@@ -59,3 +59,4 @@ function launchConfetti() {
     }
   })();
 }
+
